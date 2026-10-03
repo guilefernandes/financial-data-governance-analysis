@@ -126,12 +126,12 @@ esses dados estiverem disponíveis:
 | Material | Fonte | Referência |
 | --- | --- | --- |
 | CSVs de reclamações e clientes (`00.c`) | Banco Central do Brasil (BCB) | Os três arquivos CSV foram obtidos do conjunto [Ranking de Instituições por Índice de Reclamações](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes). Confira o período ao obter uma versão atualizada. |
-| PDFs do ranking de reclamações (`00.b`) e tabela de irregularidades (`00.d`) | Banco Central do Brasil (BCB) | Consulte a [página oficial dos rankings](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc) e selecione o período correspondente. |
-| Indicadores financeiros e institucionais (`00.b`) | Compilação deste estudo, com fontes que variam por indicador | O arquivo não registra a URL de origem de cada campo. O [IFData do BCB](https://www3.bcb.gov.br/ifdata/) é uma referência oficial para consulta e conferência de informações de instituições financeiras; para indicadores não cobertos, consulte as páginas de relações com investidores das instituições. Essas referências não identificam necessariamente a origem histórica de cada valor compilado. |
-| Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
-| Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
-| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links na coluna `url_direta_do_pdf`. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
-| Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
+| PDFs do ranking de reclamações (`00.b`) e tabela de irregularidades (`00.d`) | Banco Central do Brasil (BCB) | Consulte a [página oficial dos rankings pelo site do Branco Central do BBrasil para mais informações](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc) e selecione o período correspondente. |
+| Indicadores financeiros e institucionais (`00.b`) | Instituições financeiras individualmente | Os indicadores foram coletados nas fontes oficiais de cada banco, como demonstrações financeiras e páginas de relações com investidores. |
+| Material de referência sobre autorregulação bancária | Banco Central do Brasil (BCB), sobre a autorregulação da Febraban | [Apresentação “Autorregulação Bancária Febraban”, do diretor Isaac Sidney](https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/Autorregula%C3%A7%C3%A3o%20Banc%C3%A1ria%20Febraban%20-%20Diretor%20Isaac%20Sidney.pdf), hospedada no site do BCB. |
+| Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída, mas no link está disponível para download da versão. |
+| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
+| Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima através do código realizado em jupyter notebook. |
 
 As bases do BCB são públicas, mas os arquivos locais `00.b`–`00.d` (CSVs e
 PDFs) ficam fora do Git; consulte os portais oficiais para obter os dados e
@@ -143,10 +143,10 @@ inventário e as condições de uso de cada fonte. O inventário reúne as
 referências diretas e complementares e registra as ressalvas sobre o tipo e o
 ano do documento. A data registrada é a verificação do portal oficial.
 
-O PDF do DAMA-DMBOK, a cópia local da publicação BCBS 239 e os PDFs dos
-relatórios da Febraban não são versionados. Para consultar o material da
-Febraban e a publicação BCBS 239, use os links oficiais indicados acima; para
-o DAMA-DMBOK, consulte a fonte e as condições de acesso do editor.
+O PDF do DAMA-DMBOK e a cópia local da publicação BCBS 239 não são
+versionados. Para consultar a apresentação sobre autorregulação bancária e a
+publicação BCBS 239, use os links indicados acima; para o DAMA-DMBOK, consulte
+a fonte e as condições de acesso do editor.
 
 ## Estado e limitações
 

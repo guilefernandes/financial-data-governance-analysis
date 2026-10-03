@@ -20,6 +20,9 @@ env/
 /00.c Relatório Anual da Autorregulação Bancária.PDF
 /00.e Relatório Anual da Autorregulação Bancária (Febraban).pdf
 
+# Relatórios institucionais usados como fontes; manter apenas os links no Git
+/00.f Relatório Anual Integrado*.pdf
+
 # Configurações locais do editor
 .vscode/
 .idea/

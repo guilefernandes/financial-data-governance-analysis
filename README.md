@@ -72,7 +72,9 @@ Os prefixos organizam os materiais por etapa:
 - `00.e` — referências sobre governança de dados e regulação; o relatório da
   Febraban e a publicação BCBS 239 são referenciados por links oficiais, sem
   cópias locais; a obra DAMA-DMBOK não está incluída;
-- `00.f` — relatórios anuais integrados usados na análise;
+- `00.f` — relatórios anuais integrados usados na análise; os PDFs são fontes
+  de terceiros e não são versionados. O inventário em `docs/` mantém os links
+  oficiais para consulta e obtenção local;
 - `00.g` — diagramas e visualizações;
 - `00.h` — base consolidada gerada pela análise.
 
@@ -95,7 +97,10 @@ Ele foi desenvolvido em Python no Google Colab e deve ser executado célula a
 célula, em ordem.
 
 1. Abra o notebook no Google Colab ou em um ambiente Jupyter.
-2. Disponibilize no ambiente os CSVs e PDFs referenciados pelo notebook.
+2. Disponibilize no ambiente os CSVs e os PDFs das instituições referenciados
+   pelo notebook. Os relatórios não são distribuídos neste repositório; use os
+   links de `docs/fontes-relatorios-anuais.csv` e mantenha os arquivos locais
+   na pasta raiz, com os nomes esperados pelo notebook.
 3. Execute as células na ordem apresentada, incluindo a célula inicial de
    instalação das dependências.
 
@@ -120,14 +125,15 @@ esses dados estiverem disponíveis:
 | Rankings e dados de reclamações/irregularidades (`00.b`–`00.d`) | Banco Central do Brasil (BCB) | [Portal de Dados Abertos / API Olinda](https://dadosabertos.bcb.gov.br/). O TCC registra consulta em 17 abr. 2026; confira o período e o conjunto de dados específico ao reutilizar. |
 | Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
-| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links de PDF na coluna `url_direta_do_pdf`. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
+| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links na coluna `url_direta_do_pdf`. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
 
 ### Referências complementares recebidas
 
-Estes documentos foram enviados como referências adicionais. Eles não
-substituem os relatórios anuais integrados dos anos indicados nos arquivos
-locais:
+As referências complementares e suas ressalvas estão registradas na coluna
+`observacao` do [inventário](docs/fontes-relatorios-anuais.csv). Elas não
+substituem automaticamente os relatórios integrados associados a cada linha.
+Entre as fontes complementares recebidas estão:
 
 - 99Pay — [Demonstrações financeiras completas, dezembro de 2025](https://99app.com/99pay/demonstracoes-financeiras/2025/DF-completa-99Pay-IP-Dezembro2025.pdf);
 - BTG Pactual — [Relatório Anual 2025](https://static.btgpactual.com/media/relatorio-anual-2025.pdf);
@@ -135,10 +141,10 @@ locais:
 
 As bases do BCB são públicas e os relatórios anuais estão disponíveis nas
 instituições emissoras, mas isso não torna automaticamente irrestrita a
-redistribuição de cada documento. Antes de tornar o repositório público,
-confirme as condições de uso dos PDFs mantidos e complete, no inventário,
-os links diretos dos relatórios que ainda não foram confirmados. A data
-registrada é a verificação do portal oficial.
+redistribuição de cada documento. Por isso, os PDFs dos relatórios
+institucionais ficam fora do Git; consulte os links do inventário e as
+condições de uso de cada fonte. A data registrada é a verificação do portal
+oficial.
 
 O PDF do DAMA-DMBOK, a cópia local da publicação BCBS 239 e os PDFs dos
 relatórios da Febraban não são versionados. Para consultar o material da

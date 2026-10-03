@@ -120,15 +120,15 @@ esses dados estiverem disponíveis:
 | Rankings e dados de reclamações/irregularidades (`00.b`–`00.d`) | Banco Central do Brasil (BCB) | [Portal de Dados Abertos / API Olinda](https://dadosabertos.bcb.gov.br/). O TCC registra consulta em 17 abr. 2026; confira o período e o conjunto de dados específico ao reutilizar. |
 | Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
-| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial identificado e a data de verificação do link. Os links diretos dos PDFs e as datas originais de download não foram registrados. |
+| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial identificado e a data de verificação. Quando localizado e confirmado, o endereço direto do PDF é registrado na mesma linha; campos vazios indicam que o link direto ainda não foi confirmado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
 
 As bases do BCB são públicas e os relatórios anuais estão disponíveis nas
 instituições emissoras, mas isso não torna automaticamente irrestrita a
 redistribuição de cada documento. Antes de tornar o repositório público,
 confirme as condições de uso dos PDFs mantidos e complete, no inventário,
-os links diretos dos relatórios. A data registrada é a verificação do portal
-oficial, não a data histórica de download do PDF.
+os links diretos dos relatórios que ainda não foram confirmados. A data
+registrada é a verificação do portal oficial.
 
 O PDF do DAMA-DMBOK, a cópia local da publicação BCBS 239 e os PDFs dos
 relatórios da Febraban não são versionados. Para consultar o material da

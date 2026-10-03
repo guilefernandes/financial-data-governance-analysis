@@ -128,23 +128,13 @@ esses dados estiverem disponíveis:
 | Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links na coluna `url_direta_do_pdf`. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
 
-### Referências complementares recebidas
-
-As referências complementares e suas ressalvas estão registradas na coluna
-`observacao` do [inventário](docs/fontes-relatorios-anuais.csv). Elas não
-substituem automaticamente os relatórios integrados associados a cada linha.
-Entre as fontes complementares recebidas estão:
-
-- 99Pay — [Demonstrações financeiras completas, dezembro de 2025](https://99app.com/99pay/demonstracoes-financeiras/2025/DF-completa-99Pay-IP-Dezembro2025.pdf);
-- BTG Pactual — [Relatório Anual 2025](https://static.btgpactual.com/media/relatorio-anual-2025.pdf);
-- Banrisul — [Relatório de Sustentabilidade 2022](https://www.banrisul.com.br/bob/site/link/midias/51219_Relatorio-de-sustentabilidade-Banrisul-2022.pdf).
-
 As bases do BCB são públicas e os relatórios anuais estão disponíveis nas
 instituições emissoras, mas isso não torna automaticamente irrestrita a
 redistribuição de cada documento. Por isso, os PDFs dos relatórios
 institucionais ficam fora do Git; consulte os links do inventário e as
-condições de uso de cada fonte. A data registrada é a verificação do portal
-oficial.
+condições de uso de cada fonte. O inventário reúne as referências diretas e
+complementares e registra as ressalvas sobre o tipo e o ano do documento. A
+data registrada é a verificação do portal oficial.
 
 O PDF do DAMA-DMBOK, a cópia local da publicação BCBS 239 e os PDFs dos
 relatórios da Febraban não são versionados. Para consultar o material da

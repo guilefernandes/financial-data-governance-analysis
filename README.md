@@ -221,7 +221,8 @@ uma instituição.
 
 ## Licença
 
-Licença do código ainda não definida. A ausência de uma licença não concede
-automaticamente permissão para reutilizar ou redistribuir o conteúdo. Dados e
-documentos de terceiros podem estar sujeitos a condições próprias,
-independentemente da licença que venha a ser escolhida para o código.
+O código-fonte original nas células Python do notebook está sob a licença
+[MIT](LICENSE). Essa licença não cobre o texto do notebook ou do TCC, os dados,
+os resultados gerados, as imagens, os diagramas, os gráficos nem os materiais
+de terceiros. A licença não concede direitos sobre esses itens; consulte as
+condições próprias de cada fonte antes de reutilizá-los ou redistribuí-los.

@@ -118,7 +118,21 @@ projeto foram conferidos e contêm dados de **2025, 4º trimestre**:
 | `00.c Reclamacoes e quantidades de clientes por instituicao.csv` | Sim | 2025, 4º trimestre | [Conjunto de dados do BCB](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes); selecionar a versão histórica correspondente ao período. |
 | `00.c Reclamacoes e irregularidades por instituicao financeira.csv` | Sim | 2025, 4º trimestre | Mesmo conjunto de dados do BCB; selecionar a versão histórica correspondente ao período. |
 | `00.d Tabela de irregularidades.csv` | Sim | 2025, 4º trimestre | [Rankings do BCB](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc); obter a tabela de irregularidades do mesmo período. |
-| `00.b Lista dos principais indicadores por instituicao financeira.csv` | Sim | Período não registrado no arquivo | Base compilada para o estudo. Seus valores não trazem data de referência nem fonte individual por indicador/instituição; consulte a ressalva abaixo antes de tentar reproduzir exatamente esses números. |
+| `00.b Lista dos principais indicadores por instituicao financeira.csv` | Sim | Compilação com bases de referência distintas, detalhadas abaixo | Base compilada para o estudo. A planilha não contém fontes nem datas por linha; períodos e fontes abaixo foram identificados nos registros usados para compilar os dados e não substituem uma trilha de auditoria valor a valor. |
+
+Para o CSV `00.b` de indicadores, as referências identificadas são:
+
+| Indicadores | Fonte identificada | Data-base identificada |
+| --- | --- | --- |
+| Ativos totais, número de clientes e segmento regulatório (Segmento_BC) | BCB, IF.data e registros do CCS | Dezembro de 2024 |
+| Índice de resolutividade e reclamações no trimestre | Ranking de reclamações do BCB | 4º trimestre de 2024; o ranking de 2025 ainda não estava disponível quando a compilação foi feita. |
+| Valor de mercado | B3 ou NYSE, conforme a instituição | Janeiro/fevereiro de 2025; o dia de referência não foi preservado. `N/D` foi usado para instituições sem valor de mercado listado aplicável, como estatais não listadas e cooperativas. |
+| Lucro anual e ROE anual | Demonstrações financeiras das instituições; BCB/COSIF e Febraban também foram consultados na pesquisa | Exercício social de 2024 |
+
+Essas datas-base foram informadas a partir da busca dos registros da
+compilação. Como o CSV não associa cada valor à sua fonte primária, documento,
+data de consulta e cálculo, trate-as como referências identificadas para o
+conjunto, não como verificação independente de cada célula.
 
 Há também arquivos locais que não são lidos pelo notebook atual: `00.c
 Reclamacoes por instituicao financeira e conglomerado.csv` (também referente a
@@ -129,12 +143,24 @@ notebook devem ser obtidos conforme `docs/fontes-relatorios-anuais.csv`; use os
 nomes de arquivo esperados pelo notebook.
 
 Para repetir os resultados com os mesmos dados, não substitua os arquivos por
-uma versão mais recente: preserve o período indicado e confira o cabeçalho e o
-conteúdo após obter cada arquivo. O período do BCB pode ser identificado pelas
-colunas `Ano` e `Trimestre` nas bases. A tabela de indicadores financeiros
-precisa de uma trilha de auditoria própria — fonte e data de referência por
-instituição/indicador — antes que sua versão histórica possa ser reproduzida
-com segurança.
+uma versão mais recente: preserve os períodos indicados e confira o cabeçalho
+e o conteúdo após obter cada arquivo. Os períodos do BCB podem ser
+identificados pelas colunas `Ano` e `Trimestre`. Note que o CSV `00.b` combina
+dados de reclamações do 4º trimestre de 2024 com outras métricas financeiras
+de exercício 2024 ou de início de 2025, enquanto os arquivos `00.c` e `00.d`
+incluídos aqui são do 4º trimestre de 2025; portanto, essas bases não
+representam todas a mesma data de observação. O ranking de reclamações do
+4º trimestre de 2025 não estava disponível quando os indicadores de `00.b`
+foram compilados; por isso, para esse CSV foi usado o ranking de 2024. As
+fontes consultadas para a compilação incluíram o BCB, os sites das instituições
+e a Febraban.
+
+A execução do notebook é reproduzível com os arquivos originais. Já a
+reconstrução independente de cada indicador financeiro ainda requer registrar,
+por valor, instituição e indicador, o documento ou endereço de origem, a data
+exata de referência/consulta e, quando aplicável, o critério de cálculo. Em
+particular, o CSV não preserva o dia de referência dos valores de mercado nem
+as fontes primárias vinculadas a cada linha.
 
 O notebook usa caminhos absolutos como `/content/...`, próprios do Google
 Colab; para executá-lo localmente, será necessário adaptar os caminhos dos
@@ -161,6 +187,9 @@ esses dados estiverem disponíveis:
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída, mas no link está disponível para download da versão. |
 | Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos pelo notebook deste projeto a partir dos dados e documentos identificados acima. |
+
+As imagens e os diagramas incluídos no projeto são de autoria do autor, que
+confirma ter permissão para publicá-los.
 
 As bases do BCB são públicas, mas os arquivos locais `00.b`–`00.d` (CSVs e
 PDFs) ficam fora do Git; consulte os portais oficiais para obter os dados e

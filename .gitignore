@@ -27,6 +27,8 @@ env/
 /00.b*.csv
 /00.c*.csv
 /00.d*.csv
+/00.b*.pdf
+/00.b*.PDF
 
 # Configurações locais do editor
 .vscode/

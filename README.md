@@ -66,7 +66,8 @@ vermelha mostra a tendência reportada no estudo.
 Os prefixos organizam os materiais por etapa:
 
 - `00.a` — notebook principal de desenvolvimento;
-- `00.b` — indicadores financeiros e institucionais compilados;
+- `00.b` — PDFs do ranking de reclamações do BCB e CSV de indicadores
+  financeiros e institucionais compilados;
 - `00.c` — bases do ranking de reclamações do Banco Central;
 - `00.d` — tabela de irregularidades regulatórias do Banco Central;
 - `00.e` — referências sobre governança de dados e regulação; o relatório da
@@ -97,12 +98,12 @@ Ele foi desenvolvido em Python no Google Colab e deve ser executado célula a
 célula, em ordem.
 
 1. Abra o notebook no Google Colab ou em um ambiente Jupyter.
-2. Disponibilize no ambiente os CSVs `00.b`–`00.d` e os PDFs das instituições
-   referenciados pelo notebook. As bases `00.b`–`00.d` e os relatórios
-   institucionais não são distribuídos neste repositório. Consulte as fontes
-   oficiais na seção abaixo, baixe ou prepare os arquivos localmente na pasta
-   raiz, usando os nomes esperados pelo notebook. Para os relatórios, use
-   também os links de `docs/fontes-relatorios-anuais.csv`.
+2. Disponibilize no ambiente os arquivos `00.b`–`00.d` e os PDFs das
+   instituições referenciados pelo notebook. As bases e os PDFs de `00.b`–`00.d`
+   e os relatórios institucionais não são distribuídos neste repositório.
+   Consulte as fontes oficiais na seção abaixo, baixe ou prepare os arquivos
+   localmente na pasta raiz, usando os nomes esperados pelo notebook. Para os
+   relatórios, use também os links de `docs/fontes-relatorios-anuais.csv`.
 3. Execute as células na ordem apresentada, incluindo a célula inicial de
    instalação das dependências.
 
@@ -124,22 +125,22 @@ esses dados estiverem disponíveis:
 
 | Material | Fonte | Referência |
 | --- | --- | --- |
-| Dados de reclamações e clientes (`00.c`) e tabela de irregularidades (`00.d`) | Banco Central do Brasil (BCB) | Consulte o [Ranking de Instituições por Índice de Reclamações no portal de Dados Abertos](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes) ou a [página oficial dos rankings](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc). Selecione o período correspondente ao analisar os dados. |
+| PDFs do ranking de reclamações (`00.b`), dados de reclamações e clientes (`00.c`) e tabela de irregularidades (`00.d`) | Banco Central do Brasil (BCB) | Consulte o [Ranking de Instituições por Índice de Reclamações no portal de Dados Abertos](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes) ou a [página oficial dos rankings](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc). Selecione o período correspondente ao analisar os dados. |
 | Indicadores financeiros e institucionais (`00.b`) | Compilação deste estudo, com fontes que variam por indicador | O arquivo não registra a URL de origem de cada campo. O [IFData do BCB](https://www3.bcb.gov.br/ifdata/) é uma referência oficial para consulta e conferência de informações de instituições financeiras; para indicadores não cobertos, consulte as páginas de relações com investidores das instituições. Essas referências não identificam necessariamente a origem histórica de cada valor compilado. |
 | Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
 | Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links na coluna `url_direta_do_pdf`. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
 
-As bases do BCB são públicas, mas os arquivos derivados `00.b`–`00.d` ficam
-fora do Git; consulte os portais oficiais para obter os dados e confira o
-período antes de reutilizá-los. Os relatórios anuais estão disponíveis nas
-instituições emissoras, mas isso não torna automaticamente irrestrita a
-redistribuição de cada documento. Por isso, os PDFs dos relatórios
-institucionais também ficam fora do Git; consulte os links do inventário e as
-condições de uso de cada fonte. O inventário reúne as referências diretas e
-complementares e registra as ressalvas sobre o tipo e o ano do documento. A
-data registrada é a verificação do portal oficial.
+As bases do BCB são públicas, mas os arquivos locais `00.b`–`00.d` (CSVs e
+PDFs) ficam fora do Git; consulte os portais oficiais para obter os dados e
+confira o período antes de reutilizá-los. Os relatórios anuais estão
+disponíveis nas instituições emissoras, mas isso não torna automaticamente
+irrestrita a redistribuição de cada documento. Por isso, os PDFs dos
+relatórios institucionais também ficam fora do Git; consulte os links do
+inventário e as condições de uso de cada fonte. O inventário reúne as
+referências diretas e complementares e registra as ressalvas sobre o tipo e o
+ano do documento. A data registrada é a verificação do portal oficial.
 
 O PDF do DAMA-DMBOK, a cópia local da publicação BCBS 239 e os PDFs dos
 relatórios da Febraban não são versionados. Para consultar o material da

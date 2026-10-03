@@ -120,8 +120,18 @@ esses dados estiverem disponíveis:
 | Rankings e dados de reclamações/irregularidades (`00.b`–`00.d`) | Banco Central do Brasil (BCB) | [Portal de Dados Abertos / API Olinda](https://dadosabertos.bcb.gov.br/). O TCC registra consulta em 17 abr. 2026; confira o período e o conjunto de dados específico ao reutilizar. |
 | Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
-| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial identificado e a data de verificação. Quando localizado e confirmado, o endereço direto do PDF é registrado na mesma linha; campos vazios indicam que o link direto ainda não foi confirmado. |
+| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação, o link direto do PDF e, quando aplicável, uma URL de referência complementar em colunas separadas. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
+
+### Referências complementares recebidas
+
+Estes documentos foram enviados como referências adicionais. Eles não
+substituem os relatórios anuais integrados dos anos indicados nos arquivos
+locais:
+
+- 99Pay — [Demonstrações financeiras completas, dezembro de 2025](https://99app.com/99pay/demonstracoes-financeiras/2025/DF-completa-99Pay-IP-Dezembro2025.pdf);
+- BTG Pactual — [Relatório Anual 2025](https://static.btgpactual.com/media/relatorio-anual-2025.pdf);
+- Banrisul — [Relatório de Sustentabilidade 2022](https://www.banrisul.com.br/bob/site/link/midias/51219_Relatorio-de-sustentabilidade-Banrisul-2022.pdf).
 
 As bases do BCB são públicas e os relatórios anuais estão disponíveis nas
 instituições emissoras, mas isso não torna automaticamente irrestrita a

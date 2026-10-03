@@ -164,11 +164,14 @@ as fontes primárias vinculadas a cada linha.
 
 O notebook usa caminhos absolutos como `/content/...`, próprios do Google
 Colab; para executá-lo localmente, será necessário adaptar os caminhos dos
-arquivos. As dependências utilizadas incluem `pandas`, `numpy`, `pdfplumber`,
-`nltk`, `rapidfuzz`, `sentence-transformers`, `scikit-learn`, `scipy`,
-`matplotlib`, `seaborn`, `plotly` e `tensorflow`. As versões ainda não estão
-fixadas em um arquivo de dependências, portanto a reprodução exata dos
-resultados requer validar e registrar o ambiente utilizado.
+arquivos. O ambiente informado para uma execução bem-sucedida no Colab foi
+Python 3.13.15. As versões das dependências diretas registradas nessa execução
+estão em [`requirements-colab.txt`](requirements-colab.txt). No Colab, envie
+esse arquivo para a sessão e execute `!pip install -r requirements-colab.txt`
+antes de rodar o notebook. O arquivo fixa as dependências diretas, mas não
+todas as dependências transitivas nem a imagem/runtime do Colab; para maior
+reprodutibilidade, mantenha também as entradas e os períodos de dados descritos
+acima.
 
 A execução gera `00.h Relatório Anual Integrado TCC.csv` no diretório de
 trabalho.

@@ -14,9 +14,11 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# Documentos de referência e relatórios de terceiros
-/*.pdf
-/*.PDF
+# Livros de terceiros sem permissão de redistribuição confirmada
+/00.e Relatório DAMA Dmbok 2nd Edition.pdf
+/00.e Relatório BCBS Basel Committee on Banking Supervision.pdf
+/00.c Relatório Anual da Autorregulação Bancária.PDF
+/00.e Relatório Anual da Autorregulação Bancária (Febraban).pdf
 
 # Configurações locais do editor
 .vscode/

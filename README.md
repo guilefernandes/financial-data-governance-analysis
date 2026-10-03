@@ -69,11 +69,10 @@ Os prefixos organizam os materiais por etapa:
 - `00.b` — indicadores e rankings de reclamações;
 - `00.c` — bases de reclamações, clientes e irregularidades;
 - `00.d` — tabela de irregularidades;
-- `00.e` — referências sobre governança de dados e regulação, mantidas fora
-  deste repositório enquanto as permissões de redistribuição não forem
-  confirmadas;
-- `00.f` — relatórios anuais integrados usados na análise, também mantidos fora
-  deste repositório até a confirmação das permissões;
+- `00.e` — referências sobre governança de dados e regulação; o relatório da
+  Febraban e a publicação BCBS 239 são referenciados por links oficiais, sem
+  cópias locais; a obra DAMA-DMBOK não está incluída;
+- `00.f` — relatórios anuais integrados usados na análise;
 - `00.g` — diagramas e visualizações;
 - `00.h` — base consolidada gerada pela análise.
 
@@ -113,17 +112,27 @@ trabalho.
 
 ## Fontes e distribuição
 
-Os dados de reclamações e irregularidades são atribuídos no estudo a fontes
-públicas do BACEN; os relatórios anuais são publicados pelas próprias
-instituições. Antes de redistribuir esses arquivos, confirme as condições de
-uso e as licenças aplicáveis, registre as URLs e datas de acesso e verifique
-se há conteúdo pessoal, confidencial ou restrito. Quando a redistribuição não
-for permitida, prefira documentar a fonte e como obter os arquivos.
+As fontes devem ser citadas junto com o período e a data de consulta quando
+esses dados estiverem disponíveis:
 
-Os PDFs de referência e relatórios anuais existentes na pasta de trabalho não
-são versionados neste repositório enquanto suas permissões de redistribuição
-não forem verificadas. Para reproduzir a análise, obtenha esses documentos nas
-fontes originais e disponibilize-os no diretório esperado pelo notebook.
+| Material | Fonte | Referência |
+| --- | --- | --- |
+| Rankings e dados de reclamações/irregularidades (`00.b`–`00.d`) | Banco Central do Brasil (BCB) | [Portal de Dados Abertos / API Olinda](https://dadosabertos.bcb.gov.br/). O TCC registra consulta em 17 abr. 2026; confira o período e o conjunto de dados específico ao reutilizar. |
+| Relatório Anual da Autorregulação Bancária 2024 | Federação Brasileira de Bancos (Febraban) | [Portal oficial da Febraban](https://portal.febraban.org.br/). Pesquise pelo título da publicação; os PDFs locais duplicados foram retirados e não são distribuídos neste repositório. Portal consultado em 3 out. 2026; o link direto do arquivo não estava registrado. |
+| Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída. |
+| Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas nos nomes dos arquivos | Publicações institucionais dos emissores, referentes ao ano indicado no nome do arquivo. Os PDFs foram obtidos das fontes oficiais conforme a procedência informada para o projeto. Os links diretos e as datas individuais de obtenção não foram registrados na cópia de trabalho. |
+| Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos a partir dos dados e documentos identificados acima. |
+
+As bases do BCB são públicas e os relatórios anuais estão disponíveis nas
+instituições emissoras, mas isso não torna automaticamente irrestrita a
+redistribuição de cada documento. Antes de tornar o repositório público,
+confirme as condições de uso dos PDFs mantidos, cite a instituição emissora e
+complete os links diretos e datas de obtenção dos 35 relatórios em `00.f`.
+
+Os livros integrais DAMA-DMBOK e BCBS 239 e as cópias locais dos relatórios da
+Febraban não são versionados. Para consultar o material da Febraban, use o
+portal oficial indicado acima; para os livros, consulte as fontes e as
+condições de acesso dos respectivos editores.
 
 ## Estado e limitações
 

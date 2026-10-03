@@ -87,9 +87,10 @@ pessoais removidos](docs/tcc-final-redigido.pdf). O documento mantém o conteúd
 do trabalho, mas suprime os endereços e e-mails da capa e remove os metadados
 pessoais do PDF. Os arquivos originais permanecem fora desta pasta.
 
-Antes de publicar este repositório como público, confirme as regras de
-publicação da USP/ESALQ e as permissões aplicáveis a imagens, trechos e demais
-materiais de terceiros incluídos no trabalho.
+Este repositório está público. As imagens e os diagramas são de autoria do
+autor, que confirma ter permissão para publicá-los. Trechos e outros materiais
+de terceiros continuam sujeitos às regras de publicação da USP/ESALQ e às
+condições de uso de cada fonte.
 
 ## Como executar
 
@@ -105,8 +106,10 @@ célula, em ordem.
    Consulte as fontes oficiais na seção abaixo, baixe ou prepare os arquivos
    localmente na pasta raiz, usando os nomes esperados pelo notebook. Para os
    relatórios, use também os links de `docs/fontes-relatorios-anuais.csv`.
-3. Execute as células na ordem apresentada, incluindo a célula inicial de
-   instalação das dependências.
+3. Disponibilize também `requirements-colab.txt` no ambiente e instale as
+   dependências executando `!pip install -r requirements-colab.txt`.
+4. Execute as células do notebook na ordem apresentada. O notebook não instala
+   os pacotes Python; a instalação é uma etapa separada.
 
 ### Arquivos de entrada e versões
 
@@ -162,16 +165,15 @@ exata de referência/consulta e, quando aplicável, o critério de cálculo. Em
 particular, o CSV não preserva o dia de referência dos valores de mercado nem
 as fontes primárias vinculadas a cada linha.
 
-O notebook usa caminhos absolutos como `/content/...`, próprios do Google
-Colab; para executá-lo localmente, será necessário adaptar os caminhos dos
-arquivos. O ambiente informado para uma execução bem-sucedida no Colab foi
-Python 3.13.15. As versões das dependências diretas registradas nessa execução
-estão em [`requirements-colab.txt`](requirements-colab.txt). No Colab, envie
-esse arquivo para a sessão e execute `!pip install -r requirements-colab.txt`
-antes de rodar o notebook. O arquivo fixa as dependências diretas, mas não
-todas as dependências transitivas nem a imagem/runtime do Colab; para maior
-reprodutibilidade, mantenha também as entradas e os períodos de dados descritos
-acima.
+O notebook foi testado com sucesso pelo autor no Google Colab. O ambiente
+informado nessa execução foi Python 3.13.15, com as versões das dependências
+diretas registradas em [`requirements-colab.txt`](requirements-colab.txt). O
+notebook usa caminhos absolutos como `/content/...`, próprios do Google Colab;
+para executá-lo localmente, será necessário adaptar os caminhos dos arquivos.
+O arquivo de dependências não fixa todas as dependências transitivas nem a
+imagem/runtime do Colab, portanto uma reprodução bit a bit não é garantida.
+Para reproduzir a análise, mantenha também os arquivos de entrada e os períodos
+de dados descritos acima.
 
 A execução gera `00.h Relatório Anual Integrado TCC.csv` no diretório de
 trabalho.
@@ -191,9 +193,6 @@ esses dados estiverem disponíveis:
 | Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
 | Gráficos e base consolidada (`00.g`–`00.h`) | Resultados deste projeto | Produzidos pelo notebook deste projeto a partir dos dados e documentos identificados acima. |
 
-As imagens e os diagramas incluídos no projeto são de autoria do autor, que
-confirma ter permissão para publicá-los.
-
 As bases do BCB são públicas, mas os arquivos locais `00.b`–`00.d` (CSVs e
 PDFs) ficam fora do Git; consulte os portais oficiais para obter os dados e
 confira o período antes de reutilizá-los. Os relatórios anuais estão
@@ -211,11 +210,14 @@ a fonte e as condições de acesso do editor.
 
 ## Estado e limitações
 
-Este repositório reúne os materiais de análise, mas ainda requer validação da
-reprodutibilidade integral do notebook e das versões das dependências. O ISM é
-um índice sintético proposto pelo estudo, construído a partir de informações
-públicas e declarações institucionais; não deve ser interpretado isoladamente
-como certificação independente da maturidade real de uma instituição.
+O notebook foi executado com sucesso pelo autor no Google Colab com o ambiente
+registrado acima. A execução pode variar com alterações no runtime, nas
+dependências transitivas e nos modelos externos; além disso, a reconstrução
+independente dos indicadores financeiros exige as referências por valor
+descritas acima. O ISM é um índice sintético proposto pelo estudo, construído a
+partir de informações públicas e declarações institucionais; não deve ser
+interpretado isoladamente como certificação independente da maturidade real de
+uma instituição.
 
 ## Licença
 

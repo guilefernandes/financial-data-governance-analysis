@@ -108,6 +108,34 @@ célula, em ordem.
 3. Execute as células na ordem apresentada, incluindo a célula inicial de
    instalação das dependências.
 
+### Arquivos de entrada e versões
+
+O notebook lê diretamente os arquivos abaixo. Os CSVs do BCB presentes no
+projeto foram conferidos e contêm dados de **2025, 4º trimestre**:
+
+| Arquivo esperado na raiz | Necessário na execução atual? | Versão / período identificado | Fonte e observações |
+| --- | --- | --- | --- |
+| `00.c Reclamacoes e quantidades de clientes por instituicao.csv` | Sim | 2025, 4º trimestre | [Conjunto de dados do BCB](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes); selecionar a versão histórica correspondente ao período. |
+| `00.c Reclamacoes e irregularidades por instituicao financeira.csv` | Sim | 2025, 4º trimestre | Mesmo conjunto de dados do BCB; selecionar a versão histórica correspondente ao período. |
+| `00.d Tabela de irregularidades.csv` | Sim | 2025, 4º trimestre | [Rankings do BCB](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc); obter a tabela de irregularidades do mesmo período. |
+| `00.b Lista dos principais indicadores por instituicao financeira.csv` | Sim | Período não registrado no arquivo | Base compilada para o estudo. Seus valores não trazem data de referência nem fonte individual por indicador/instituição; consulte a ressalva abaixo antes de tentar reproduzir exatamente esses números. |
+
+Há também arquivos locais que não são lidos pelo notebook atual: `00.c
+Reclamacoes por instituicao financeira e conglomerado.csv` (também referente a
+2025, 4º trimestre), os PDFs de ranking `00.b` e os PDFs de referência `00.e`.
+Eles podem servir para consulta, mas não substituem os quatro arquivos de
+entrada listados acima. Os relatórios institucionais `00.f` usados pelo
+notebook devem ser obtidos conforme `docs/fontes-relatorios-anuais.csv`; use os
+nomes de arquivo esperados pelo notebook.
+
+Para repetir os resultados com os mesmos dados, não substitua os arquivos por
+uma versão mais recente: preserve o período indicado e confira o cabeçalho e o
+conteúdo após obter cada arquivo. O período do BCB pode ser identificado pelas
+colunas `Ano` e `Trimestre` nas bases. A tabela de indicadores financeiros
+precisa de uma trilha de auditoria própria — fonte e data de referência por
+instituição/indicador — antes que sua versão histórica possa ser reproduzida
+com segurança.
+
 O notebook usa caminhos absolutos como `/content/...`, próprios do Google
 Colab; para executá-lo localmente, será necessário adaptar os caminhos dos
 arquivos. As dependências utilizadas incluem `pandas`, `numpy`, `pdfplumber`,

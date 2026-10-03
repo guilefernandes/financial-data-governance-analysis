@@ -1,7 +1,7 @@
 arquivo,emissor,ano_relatorio,url_portal_oficial,verificado_em,url_direta_do_pdf,observacao
 "00.f Relatório Anual Integrado 99pay.pdf",99Pay,2024,https://99app.com/99pay/,2026-10-03,,"Referência complementar: demonstrações financeiras completas da 99Pay IP, dezembro de 2025 (https://99app.com/99pay/demonstracoes-financeiras/2025/DF-completa-99Pay-IP-Dezembro2025.pdf); não corresponde ao relatório anual integrado 2024"
 "00.f Relatório Anual Integrado Agibank 2025.pdf",Agibank,2025,https://investors.agiinc.com/pt-br/,2026-10-03,,"Referência complementar: Relatório de GRSAC 2025 (https://static.agibank.com.br/web_public/agi-ui/docs/Relat%C3%B3rio+de+GRSAC+-+2025.pdf); não corresponde necessariamente ao relatório anual integrado"
-"00.f Relatório Anual Integrado Banco ABC 2024.pdf",Banco ABC Brasil,2024,https://ri.abcbrasil.com.br/,2026-10-03,,
+"00.f Relatório Anual Integrado Banco ABC 2024.pdf",Banco ABC Brasil,2024,https://ri.abcbrasil.com.br/,2026-10-03,https://api.mziq.com/mzfilemanager/v2/d/6298ef6f-2b75-43f8-b2ab-99e3fe33e809/8ae69c9b-b5a5-c3a4-818b-e8c3add18816?origin=2,Link direto do PDF fornecido pelo usuário; hospedado no gerenciador MZiQ
 "00.f Relatório Anual Integrado Banco BMG 2025.pdf",Banco BMG,2025,https://www.bancobmg.com.br/,2026-10-03,,
 "00.f Relatório Anual Integrado Banco BTG Pactual 2024.pdf",BTG Pactual,2024,https://ri.btgpactual.com/,2026-10-03,,
 "00.f Relatório Anual Integrado Banco BV 2024.pdf",Banco BV,2024,https://ri.bv.com.br/,2026-10-03,,

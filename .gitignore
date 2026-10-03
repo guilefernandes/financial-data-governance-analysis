@@ -23,6 +23,11 @@ env/
 # Relatórios institucionais usados como fontes; manter apenas os links no Git
 /00.f Relatório Anual Integrado*.pdf
 
+# Bases de indicadores e reclamações; manter apenas as referências no Git
+/00.b*.csv
+/00.c*.csv
+/00.d*.csv
+
 # Configurações locais do editor
 .vscode/
 .idea/

@@ -71,10 +71,9 @@ Os prefixos organizam os materiais por etapa:
   financeiros e institucionais compilados;
 - `00.c` — bases do ranking de reclamações do Banco Central;
 - `00.d` — tabela de irregularidades regulatórias do Banco Central;
-- `00.e` — referências sobre governança de dados e regulação; inclui links
-  para uma cópia do Relatório Anual de Autorregulação hospedada no Scribd, uma
-  apresentação do BCB e a publicação BCBS 239; a obra DAMA-DMBOK não está
-  incluída;
+- `00.e` — referências sobre governança de dados e regulação; inclui uma
+  apresentação do BCB sobre autorregulação bancária e a publicação BCBS 239;
+  a obra DAMA-DMBOK não está incluída;
 - `00.f` — relatórios anuais integrados usados na análise; os PDFs são fontes
   de terceiros e não são versionados. O inventário em `docs/` mantém os links
   oficiais para consulta e obtenção local;
@@ -130,7 +129,6 @@ esses dados estiverem disponíveis:
 | CSVs de reclamações e clientes (`00.c`) | Banco Central do Brasil (BCB) | Os três arquivos CSV foram obtidos do conjunto [Ranking de Instituições por Índice de Reclamações](https://dadosabertos.bcb.gov.br/dataset/ranking-de-instituicoes-por-indice-de-reclamacoes). Confira o período ao obter uma versão atualizada. |
 | PDFs do ranking de reclamações (`00.b`) e tabela de irregularidades (`00.d`) | Banco Central do Brasil (BCB) | Consulte a [página oficial dos rankings do Banco Central](https://www.bcb.gov.br/estabilidadefinanceira/rankingsbc) e selecione o período correspondente. |
 | Indicadores financeiros e institucionais (`00.b`) | Instituições financeiras individualmente | Os indicadores foram coletados nas fontes oficiais de cada banco, como demonstrações financeiras e páginas de relações com investidores. |
-| Relatório Anual da Autorregulação Bancária 2024 | Febraban; cópia hospedada por terceiro | [Relatório Anual de Autorregulação 2024](https://pt.scribd.com/document/894719348/FEBRABAN-Autorregulacao2025-V2-Completo), disponível no Scribd. O Scribd não é um portal oficial da Febraban; confirme a publicação e as condições de uso na fonte oficial antes de redistribuir ou citar. |
 | Material de referência sobre autorregulação bancária | Banco Central do Brasil (BCB), sobre a autorregulação da Febraban | [Apresentação “Autorregulação Bancária Febraban”, do diretor Isaac Sidney](https://www.bcb.gov.br/conteudo/home-ptbr/TextosApresentacoes/Autorregula%C3%A7%C3%A3o%20Banc%C3%A1ria%20Febraban%20-%20Diretor%20Isaac%20Sidney.pdf), hospedada no site do BCB. |
 | Principles for Effective Risk Data Aggregation and Risk Reporting (BCBS 239) | Basel Committee on Banking Supervision / Bank for International Settlements | [Publicação oficial do BIS](https://www.bis.org/publ/bcbs239.htm); a cópia PDF local não é distribuída, mas no link está disponível para download da versão. |
 | Relatórios anuais integrados (`00.f`) | Instituições financeiras identificadas no inventário | Os PDFs não são distribuídos neste repositório. O [inventário por arquivo](docs/fontes-relatorios-anuais.csv) registra o portal oficial, a data de verificação e os links. As observações identificam referências complementares que não correspondem ao relatório integrado do ano listado. |
@@ -147,9 +145,9 @@ referências diretas e complementares e registra as ressalvas sobre o tipo e o
 ano do documento. A data registrada é a verificação do portal oficial.
 
 O PDF do DAMA-DMBOK e a cópia local da publicação BCBS 239 não são
-versionados. Para consultar o relatório de autorregulação, a apresentação do
-BCB e a publicação BCBS 239, use os links indicados acima; para o DAMA-DMBOK,
-consulte a fonte e as condições de acesso do editor.
+versionados. Para consultar a apresentação do BCB sobre autorregulação e a
+publicação BCBS 239, use os links indicados acima; para o DAMA-DMBOK, consulte
+a fonte e as condições de acesso do editor.
 
 ## Estado e limitações
 

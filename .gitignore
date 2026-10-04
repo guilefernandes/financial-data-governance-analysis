@@ -33,6 +33,7 @@ env/
 # Configurações locais do editor
 .vscode/
 .idea/
+.streamlit/secrets.toml
 
 # Sistema operacional
 .DS_Store

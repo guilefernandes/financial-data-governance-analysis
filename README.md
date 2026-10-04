@@ -80,6 +80,16 @@ Os prefixos organizam os materiais por etapa:
 - `00.g` — diagramas e visualizações;
 - `00.h` — base consolidada gerada pela análise.
 
+Além dos materiais identificados por prefixo, o repositório inclui:
+
+- `dashboard/app.py` — painel interativo em Streamlit, descrito adiante;
+- `.streamlit/config.toml` — configurações visuais e de servidor do painel;
+- `requirements-streamlit.txt` — dependência do painel interativo;
+- `requirements-colab.txt` — dependências diretas do notebook, registradas na
+  execução de referência;
+- `docs/` — inventário dos relatórios anuais e o PDF do trabalho final;
+- `LICENSE` — licença MIT do código do notebook.
+
 ## Trabalho completo
 
 Para leitura, consulte o [PDF do trabalho final — versão com dados de contato
@@ -110,6 +120,27 @@ célula, em ordem.
    dependências executando `!pip install -r requirements-colab.txt`.
 4. Execute as células do notebook na ordem apresentada. O notebook não instala
    os pacotes Python; a instalação é uma etapa separada.
+
+### Painel interativo com Streamlit
+
+O painel em `dashboard/app.py` reúne os gráficos finais do TCC em quatro abas
+— "Sobre o estudo", "Maturidade em governança de dados", "Vs. Desempenho
+financeiro" e "Vs. Reclamações" —, com contexto e ressalvas de interpretação.
+Ele apenas reutiliza as imagens `00.g` já geradas pela análise, lidas a partir
+da raiz do projeto; o painel não reexecuta o processamento dos relatórios nem
+os modelos. Se um gráfico não for encontrado, o painel exibe uma mensagem com o
+caminho esperado em vez de falhar.
+
+Na pasta raiz deste projeto, instale a dependência do painel e inicie o app:
+
+```bash
+pip install -r requirements-streamlit.txt
+streamlit run dashboard/app.py
+```
+
+As configurações visuais e de servidor do Streamlit ficam em
+`.streamlit/config.toml`. Credenciais locais, caso sejam necessárias no futuro,
+devem ser guardadas em `.streamlit/secrets.toml`, que é ignorado pelo Git.
 
 ### Arquivos de entrada e versões
 
